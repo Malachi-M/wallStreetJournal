@@ -1,0 +1,231 @@
+/* -------------- Resets --------------- */
+
+/* ----------- General Styles ---------- */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+/* Background image is being pulled from a website until we are sure of what we want */
+html{
+	background: url(http://www.fabulousblogging.com/wp-content/uploads/2012/10/paper_fibersweb.jpg) no-repeat;
+		background-size: cover;
+		height: 100%;
+}
+
+
+#feedback-page {
+	text-align: center;
+}
+
+#form-main {
+	width: 100%;
+	float:left;
+	padding-top: 0px;
+}
+
+#form-section {
+	background-color: rgba(72,72,72,0.4);
+	padding:35px 35px;
+	padding-bottom: 50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: -260px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 0px;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding:13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.selection-input {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	margin-bottom:10px;
+}
+
+select, option {
+	border: 3px solid rgba(0,0,0,0);
+	-webkit-appearance: none; /* Removes default styles */
+	-moz-appearance: none;    /* Removes default styles */
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 0px;
+	line-height: 22px;
+	background: #fbfbfb;
+	padding:13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	background-image: url(Images/arrow-216-16.png);
+	background-position: 416px 15px;
+	background-repeat: no-repeat;
+	text-indent: 0.01px; /* Removes the default arrow from FireFox */
+	text-overflow: "";   /* Removes the default arrow from FireFox */
+}
+/* IE fix */
+select::-ms-expand {
+	display: none;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float: left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor: pointer;
+	background-color: #3498DB;
+	color: white;
+	font-size:24px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493BD;
+}
+
+.submit:hover {
+	color: #3498DB;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+	width: 100%;
+	background-color: white;
+}
+
+
+/* ----------- Focus Effects ----------- */
+
+.feedback-input:focus {
+	background: #fff;
+	box-shadow: none;
+	border: 3px solid #3498DB;
+	color: #333;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+select:focus {
+	background: #fff;
+	box-shadow: none;
+	border: 3px solid #3498DB;
+	color: #333;
+	outline: none;
+	background-image: url(Images/arrow-216-16.png);
+	background-size: 16px 16px;
+	background-position: 416px 15px;
+	background-repeat: no-repeat;
+	text-indent: 0.01px;
+	text-overflow: "";
+
+}
+
+
+/* ----------- ICON FORMATTING ---------- */
+#name{
+	background-image: url(Images/contacts-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus {
+	background-image: url(Images/contacts-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email {
+	background-image: url(Images/email-3-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus {
+	background-image: url(Images/email-3-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#datepicker{
+	background-image: url(Images/calendar-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#datepicker:focus{
+	background-image: url(Images/calendar-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#article{
+	background-image: url(Images/newspaper-10-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#article:focus{
+	background-image: url(Images/newspaper-10-32.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+/* ----------- MEDIA FORMATTING --------- */
+
+@media only screen and (max-width: 580px) {
+	#form-section{
+		width: 88%;
+		left: 3%;
+		margin-right: 3%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
