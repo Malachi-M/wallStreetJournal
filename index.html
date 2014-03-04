@@ -10,6 +10,7 @@
 
 	<link rel="stylesheet" href="css/styles.css" media="screen" type="text/css"/>
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css" media="screen" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -17,44 +18,153 @@
 
 	<main id="form-main">
 		<section id="form-section">
-			<form class="form" id="form1">
+			<form class="form" id="form1" method="GET">
 				
 				<p class="name">
-					<input name="name" type="text" class="feedback-input" placeholder="Name" id="name" title="Please Enter your Name" required/>
+					<input name="name" type="text" class="feedback-input" placeholder="Name" id="name" title="Please enter your full name" pattern="[^\d]+ [^\d]+" required autofocus/>
 				</p>
 
 				<!--<p class="email">
 					<input name="email" type="text" class="feedback-input" id="email" placeholder="Email"/>
 				</p>
 				-->
-				<p class="date">
-					<input name="name" type="text" class="feedback-input" id="datepicker" placeholder="Week" title="Please Select the Week of Reading" required>
-				</p>
+				<section class="articleInfo" name="article_1">
+					
+					<p class="date">
+						<input name="article_1" type="text" class="feedback-input" id="datepicker" placeholder="Week" title="Please select the week of reading"  required />
+					</p>
 
-				<div class="selection-input">
-					<select name="selection" title="Please Select the Article Section">
-						<optgroup label="Article Section">
-							<option value="SectionA">Section A</option>
-							<option value="SectionB">Section B</option>
-							<option value="SectionC">Section C</option>
-							<option value="SectionD">Section D</option>
-							<option value="SectionE">Section E</option>
-							<option value="SectionR">Section R</option>
-						</optgroup>
-					</select>
-				</div>
+					<div class="selection-input">
+						<select name="article_1" title="Please select the article section">
+							<optgroup label="Article Section">
+								<option value="SectionA">Section A</option>
+								<option value="SectionB">Section B</option>
+								<option value="SectionC">Section C</option>
+								<option value="SectionD">Section D</option>
+								<option value="SectionE">Section E</option>
+								<option value="SectionR">Section R</option>
+							</optgroup>
+						</select>
+					</div>
 
-				<div id="inputcontainer">
-					<input class="feedback-input" name="article" type="text" id="article" placeholder="Article" title="Please Enter the Article Title" required>
-				</div>
-				
+					<div id="inputcontainer">
+						<input class="feedback-input" name="article_1" type="text" id="article" placeholder="Article" title="Please enter the article title" required>
+					</div>
+
+				</section>
+
+				<section class="articleInfo hidden" name="article_2">
+					
+					<p class="date">
+						<input name="article_2" type="text" class="feedback-input" id="datepicker" placeholder="Week" title="Please select the week of reading"/>
+					</p>
+
+					<div class="selection-input">
+						<select name="article_2" title="Please select the article section">
+							<optgroup label="Article Section">
+								<option value="SectionA">Section A</option>
+								<option value="SectionB">Section B</option>
+								<option value="SectionC">Section C</option>
+								<option value="SectionD">Section D</option>
+								<option value="SectionE">Section E</option>
+								<option value="SectionR">Section R</option>
+							</optgroup>
+						</select>
+					</div>
+
+					<div id="inputcontainer">
+						<input class="feedback-input" name="article_2" type="text" id="article" placeholder="Article" title="Please enter the article title">
+					</div>
+
+				</section>
+
+				<section class="articleInfo hidden" name="article_3">
+					
+					<p class="date">
+						<input name="article_3" type="text" class="feedback-input" id="datepicker" placeholder="Week" title="Please select the week of reading"/>
+					</p>
+
+					<div class="selection-input">
+						<select name="article_3" title="Please select the article section">
+							<optgroup label="Article Section">
+								<option value="SectionA">Section A</option>
+								<option value="SectionB">Section B</option>
+								<option value="SectionC">Section C</option>
+								<option value="SectionD">Section D</option>
+								<option value="SectionE">Section E</option>
+								<option value="SectionR">Section R</option>
+							</optgroup>
+						</select>
+					</div>
+
+					<div id="inputcontainer">
+						<input class="feedback-input" name="article_3" type="text" id="article" placeholder="Article" title="Please enter the article title">
+					</div>
+
+				</section>
+
+				<section class="articleInfo hidden" name="article_4">
+					
+					<p class="date">
+						<input name="article_4" type="text" class="feedback-input" id="datepicker" placeholder="Week" title="Please select the week of reading"/>
+					</p>
+
+					<div class="selection-input">
+						<select name="article_4" title="Please select the article section">
+							<optgroup label="Article Section">
+								<option value="SectionA">Section A</option>
+								<option value="SectionB">Section B</option>
+								<option value="SectionC">Section C</option>
+								<option value="SectionD">Section D</option>
+								<option value="SectionE">Section E</option>
+								<option value="SectionR">Section R</option>
+							</optgroup>
+						</select>
+					</div>
+
+					<div id="inputcontainer">
+						<input class="feedback-input" name="article_4" type="text" id="article" placeholder="Article" title="Please enter the article title">
+					</div>
+
+				</section>
+
+				<section class="articleInfo hidden" name="article_5">
+					
+					<p class="date">
+						<input name="article_5" type="text" class="feedback-input" id="datepicker" placeholder="Week" title="Please select the week of reading"/>
+					</p>
+
+					<div class="selection-input">
+						<select name="article_5" title="Please select the article section">
+							<optgroup label="Article Section">
+								<option value="SectionA">Section A</option>
+								<option value="SectionB">Section B</option>
+								<option value="SectionC">Section C</option>
+								<option value="SectionD">Section D</option>
+								<option value="SectionE">Section E</option>
+								<option value="SectionR">Section R</option>
+							</optgroup>
+						</select>
+					</div>
+
+					<div id="inputcontainer">
+						<input class="feedback-input" name="article_5" type="text" id="article" placeholder="Article" title="Please enter the article title">
+					</div>
+
+				</section>
+
+				<!--
 				<p class="text">
 					<textarea name="text" class="feedback-input" id="comment" placeholder="Comment" title="Please Comment about the Article you read"></textarea>
 				</p>
-				
+				-->
+				<div class="buttons">
+					<input type="button" value="Another Article?" id="button-addArticle" title="Click another article to prepare another article for submission"/>
+					<div class="ease"></div>
+				</div>
 
-				<div class="submit">
-					<input type="submit" value="SEND" id="button-blue" title="Click Send when you have Completed this Form"/>
+				<div class="buttons">
+					<input type="submit" value="SUBMIT" id="button-submit" title="Click submit when you have completed this form"/>
 					<div class="ease"></div>
 				</div>
 
@@ -65,5 +175,6 @@
 	<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	<script src="script/date.js"></script>
+	<script src="script/additionalArticle.js"></script>
 </body>
 </html>

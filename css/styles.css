@@ -7,9 +7,9 @@
 
 /* Background image is being pulled from a website until we are sure of what we want */
 html{
-	background: url(http://www.fabulousblogging.com/wp-content/uploads/2012/10/paper_fibersweb.jpg) no-repeat;
-		background-size: cover;
-		height: 100%;
+	background-size: cover;
+	height: 100%;
+	background: #45BF55;
 }
 
 
@@ -64,6 +64,22 @@ html{
 	margin-bottom:10px;
 }
 
+.articleInfo {
+	/*margin-top: -246px;*/
+	margin-top: 60px;
+ 	transition: margin-top 1s cubic-bezier(0.490, 0.005, 0.310, 1.535);
+
+}
+.articleInfo.hidden {
+	margin-top: -246px;
+
+
+}
+
+.articleInfo:nth-of-type(1) {
+	margin-top: 0;
+}
+
 select, option {
 	border: 3px solid rgba(0,0,0,0);
 	-webkit-appearance: none; /* Removes default styles */
@@ -80,16 +96,21 @@ select, option {
 	width:100%;
 	background-image: url(Images/arrow-216-16.png);
 	background-position: 416px 15px;
-	background-repeat: no-repeat;
-	text-indent: 0.01px; /* Removes the default arrow from FireFox */
-	text-overflow: "";   /* Removes the default arrow from FireFox */
+	background-repeat: no-repeat; /* Removes the default arrow from FireFox */
+	text-overflow: "";
+	text-indent: 0.01px;   /* Removes the default arrow from FireFox */
 }
 /* IE fix */
 select::-ms-expand {
 	display: none;
 }
 
-#button-blue{
+select {
+	width:450px;
+	margin-left: -3px;
+}
+
+#button-submit{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float: left;
 	width: 100%;
@@ -105,14 +126,47 @@ select::-ms-expand {
 	transition: all 0.3s;
 	margin-top: -4px;
 	font-weight: 700;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
-#button-blue:hover{
+#button-addArticle{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float: left;
+	width: 75%;
+	border: #fbfbfb solid 4px;
+	cursor: pointer;
+	background-color: #3498DB;
+	color: white;
+	font-size:24px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+#button-submit:hover{
 	background-color: rgba(0,0,0,0);
 	color: #0493BD;
 }
 
-.submit:hover {
+#button-addArticle:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493BD;
+}
+.buttons{
+	margin-top: 70px;
+
+}
+
+.buttons:hover {
 	color: #3498DB;
 }
 
@@ -127,12 +181,22 @@ select::-ms-expand {
 	transition: .3s ease;
 }
 
-.submit:hover .ease{
+.buttons:hover .ease{
 	width: 100%;
 	background-color: white;
 }
 
+.buttons:nth-of-type(1):hover .ease{
+	width:75%;
+	background-color: white;
+}
 
+.hidden {
+	visibility: hidden;
+}
+.buttons.hidden{
+	display: none;
+}
 /* ----------- Focus Effects ----------- */
 
 .feedback-input:focus {
@@ -158,7 +222,11 @@ select:focus {
 	text-overflow: "";
 
 }
+/* ----------- VALIDATION --------------- */
 
+input:valid {
+  border: 3px solid #36E62A;
+}
 
 /* ----------- ICON FORMATTING ---------- */
 #name{
