@@ -7,7 +7,7 @@ function unavailable(date) {
 }
 
 $(document).ready(function(){
-	$("#datepicker").datepicker({
+	$(".datepicker").datepicker({
 		beforeShowDay: unavailable
 	});
 });

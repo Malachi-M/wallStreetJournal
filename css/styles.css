@@ -257,14 +257,14 @@ input:valid {
 	background-repeat: no-repeat;
 }
 
-#datepicker{
+.datepicker{
 	background-image: url(Images/calendar-32.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#datepicker:focus{
+.datepicker:focus{
 	background-image: url(Images/calendar-32.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
